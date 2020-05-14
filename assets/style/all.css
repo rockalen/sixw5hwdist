@@ -33,7 +33,7 @@ body {
 .sidebar {
   position: fixed;
   top: 0;
-  bottom: 240px; }
+  bottom: 130px; }
 
 .custom-gutters.container {
   padding-left: 0;
