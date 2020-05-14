@@ -34,4 +34,14 @@ $(document).ready(function () {
         // 隱藏編輯視窗
         $('.replay').hide();    
     })
+
+    $('.arrow_down').click(function (e) {
+        // 取消預設 event 事件
+        e.preventDefault(); 
+        // 隱藏編輯視窗
+        // var str = $( '.close' ).first().text();
+        // if 
+        // $( '.close' ).last().html( str ); 
+        $('.arrow_down').toggleClass('active1')   
+    })
 });

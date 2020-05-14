@@ -1,7 +1,6 @@
-# 🏅第五週版型攻略
-## 洧杰老師主線攻略教學
+# 🏅六角第五週版型作業
 
-同學你好，為了讓您更容易攻破此關卡，老師提供攻略資源給您參考
+
 
 ## 助教直播範例
 [Codepen 實作：使用 Bootstrap 元件](https://codepen.io/AliceChiang/pen/QWjxyxw?editors=1100)
