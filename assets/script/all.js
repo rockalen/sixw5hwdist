@@ -36,9 +36,9 @@ $(document).ready(function () {
     })
 
     // admin單元arrow_down icon 切換180度
-    $('.arrow_down').click(function (e) {
+    $('.arrow-down').click(function (e) {
         // 取消預設 event 事件
         e.preventDefault();       
-        $('.arrow_down').toggleClass('active1')   
+        $('.arrow-down').toggleClass('arrow-active')   
     })
 });

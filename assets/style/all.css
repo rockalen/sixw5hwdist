@@ -221,7 +221,7 @@ body {
 .custom-border-light {
   border: 1px solid #cccccc; }
 
-.active1 {
+.arrow-active {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg); }
