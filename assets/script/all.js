@@ -13,14 +13,14 @@ $(document).ready(function () {
     // let age = parseInt(params.get('age')); // is the number 18
     var title = $(this).attr('title');
     console.log(title);
-
+    // 動態產生子選單Title
     if (title == 'Assignment'){
         $('#sub-menu-dropdown').show();
     }else if (title == 'Admin'){
         $('#sub-menu-add-admin').show();
     }
 
-
+    // Assignment 單元replay按鈕跳出簡易編輯畫面
     $('.custom-btn-success').click(function (e) {
         // 取消預設 event 事件
         e.preventDefault();
@@ -35,13 +35,10 @@ $(document).ready(function () {
         $('.replay').hide();    
     })
 
+    // admin單元arrow_down icon 切換180度
     $('.arrow_down').click(function (e) {
         // 取消預設 event 事件
-        e.preventDefault(); 
-        // 隱藏編輯視窗
-        // var str = $( '.close' ).first().text();
-        // if 
-        // $( '.close' ).last().html( str ); 
+        e.preventDefault();       
         $('.arrow_down').toggleClass('active1')   
     })
 });
