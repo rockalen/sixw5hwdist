@@ -99,7 +99,90 @@ body {
     background-color: #2A8356; }
   .custom-page-link .page-item.active .page-link {
     color: #fff;
-    background-color: #2A8356; }
+    background-color: #2A8356;
+    border-color: #2A8356; }
+
+.checkBoxArea {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .checkBoxArea__content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .checkBoxArea__content .input {
+      margin-right: 5px; }
+    .checkBoxArea__content .label {
+      margin-bottom: 0; }
+    .checkBoxArea__content .selectCheckBox {
+      position: relative;
+      margin-right: 5px;
+      border: 2px solid #000000;
+      background-color: #FFFFFF;
+      width: 16px;
+      height: 16px;
+      -webkit-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+      text-align: center;
+      /* 短邊 */
+      /* 長邊 */ }
+      .checkBoxArea__content .selectCheckBox::before, .checkBoxArea__content .selectCheckBox::after {
+        position: absolute;
+        width: 4px;
+        background-color: #000000;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        display: inline-block;
+        border-radius: 5px;
+        -webkit-transition: opacity ease .5;
+        -o-transition: opacity ease .5;
+        transition: opacity ease .5;
+        /* 設置轉換原點座標 */
+        -webkit-transform-origin: left top;
+            -ms-transform-origin: left top;
+                transform-origin: left top; }
+      .checkBoxArea__content .selectCheckBox::before {
+        left: 0;
+        top: 4px;
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        z-index: 2; }
+      .checkBoxArea__content .selectCheckBox::after {
+        left: 6px;
+        top: 10px;
+        -webkit-transform: rotate(-135deg);
+            -ms-transform: rotate(-135deg);
+                transform: rotate(-135deg);
+        z-index: 1; }
+    .checkBoxArea__content .input[type="checkbox"]:checked + .selectCheckBox::before {
+      content: '';
+      height: 8px;
+      -webkit-animation: do_before_check 0.2s ease 0s forwards;
+              animation: do_before_check 0.2s ease 0s forwards; }
+    .checkBoxArea__content .input[type="checkbox"]:checked + .selectCheckBox::after {
+      content: '';
+      height: 18px;
+      -webkit-animation: do_after_check 0.4s ease 0s forwards;
+              animation: do_after_check 0.4s ease 0s forwards; }
+
+.cursor-pointer {
+  cursor: pointer; }
 
 .replay-bk {
   position: relative; }
